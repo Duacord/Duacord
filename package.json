@@ -1,0 +1,26 @@
+{
+  "name": "duacord",
+  "description": "Super cool discord library written for the BUN runtime",
+  "version": "0.0.0",
+  "keywords": ["discord", "bun", "duacord", "api", "wrapper"],
+  "license": "MIT",
+  "homepage": "https://github.com/Duacord/Duacord",
+  "bugs": {
+    "url": "https://github.com/Duacord/Duacord/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Duacord/Duacord.git"
+  },
+  "module": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "apidata": "bun run ./scripts/apidata.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
