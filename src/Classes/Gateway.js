@@ -70,9 +70,15 @@ class Gateway extends AdvancedEmitter {
         const GatewayUrl = await this.GetGatewayUrl()
         const Url = `${GatewayUrl}?v=10&encoding=json`
         const Socket = new Websocket(Url)
-        Socket.On("Data", console.log)
         AddSocketListeners(Socket, this)
         this.Socket = Socket
+
+        Socket.On(
+            "Data",
+            (D) => {
+                console.log(D)
+            } 
+        )
     }
 }
 
