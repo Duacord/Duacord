@@ -13,6 +13,10 @@ const Enums = {
         HEARTBEAT_ACK: 11
     },
 
+    DISPATCH_EVENT: {
+        READY: "READY",
+    },
+
     STATUS: {
         ONLINE: "online",
         DND: "dnd",
