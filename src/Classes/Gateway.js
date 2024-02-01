@@ -60,15 +60,15 @@ class Gateway extends AdvancedEmitter {
         this.Socket.Send(Packet)
     }
 
-    async GetGateway() {
+    async GetGatewayUrl() {
         const Data = await this.DiscordClient.API.get_bot_gateway()
         this.DiscordClient.Logger.Debug(`Gateway: ${Data.url}`)
-        return Data
+        return Data.url
     }
 
     async Connect() {
-        const GatewayData = await this.GetGateway()
-        const Url = `${GatewayData.url}?v=10&encoding=json`
+        const GatewayUrl = await this.GetGatewayUrl()
+        const Url = `${GatewayUrl}?v=10&encoding=json`
         const Socket = new Websocket(Url)
         Socket.On("Data", console.log)
         AddSocketListeners(Socket, this)
