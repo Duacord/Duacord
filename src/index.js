@@ -1,5 +1,7 @@
-import DiscordClient from "./Classes/DiscordClient";
+import DiscordClient from "./Classes/DiscordClient"
+import Enums from "./Enums"
 
-console.log("Hello via Bun!");
-
-export { DiscordClient } 
+export { 
+    DiscordClient,
+    Enums
+} 
