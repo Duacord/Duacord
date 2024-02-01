@@ -16,6 +16,10 @@ class Websocket extends AdvancedEmitter {
     Send(Data) {
         this.Socket.send(JSON.stringify(Data))
     }
+
+    Close() {
+        this.Socket.close()
+    }
 }
 
 export default Websocket
