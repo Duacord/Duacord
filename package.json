@@ -25,6 +25,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@corebyte/logger": "^1.0.2"
+    "@corebyte/logger": "^1.0.2",
+    "just-merge": "^3.2.0"
   }
 }
