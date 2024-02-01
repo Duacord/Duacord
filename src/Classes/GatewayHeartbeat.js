@@ -13,7 +13,7 @@ class GatewayHeartbeat {
 
     SendHeartbeat() {
         if (!this.ReceivedAck) {
-            this.Gateway.Logger.Warn("Did not receive ACK for last heartbeat!")
+            this.Gateway.DiscordClient.Logger.Warn("Did not receive ACK for last heartbeat!")
             this.Gateway.Emit("HeartbeatMissed")
             return
         }
