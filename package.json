@@ -15,7 +15,8 @@
   "module": "./src/index.js",
   "type": "module",
   "scripts": {
-    "apidata": "bun run ./scripts/apidata.js"
+    "apidata": "bun run ./scripts/apidata.js",
+    "examplelogin": "bun run ./examples/login.js"
   },
   "devDependencies": {
     "@types/bun": "latest"
