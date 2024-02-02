@@ -76,7 +76,8 @@ class Gateway extends AdvancedEmitter {
         Socket.On(
             "Data",
             (D) => {
-                console.log(D)
+                if (!D.t) { return }
+                console.log(D.t)
             } 
         )
     }

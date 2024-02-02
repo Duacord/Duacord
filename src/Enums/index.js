@@ -13,8 +13,13 @@ const Enums = {
         HEARTBEAT_ACK: 11
     },
 
+    CLIENT_EVENT: {
+        READY: "READY",
+    },
+
     DISPATCH_EVENT: {
         READY: "READY",
+        GUILD_CREATE: "GUILD_CREATE",
     },
 
     STATUS: {
